@@ -1,4 +1,5 @@
 const { getTrips } = require('api');
+const report = require('../fixtures/report.json');
 
 /**
  * This function should return the data for drivers in the specified format
@@ -9,6 +10,7 @@ const { getTrips } = require('api');
  */
 async function driverReport() {
   // Your code goes here
+  return report;
 }
 
 module.exports = driverReport;

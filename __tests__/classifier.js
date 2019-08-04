@@ -43,7 +43,7 @@ describe('classifier assumptions', () => {
         regNo: '19',
       },
     ];
-
+   
     expect(() => classifier(arr)).not.toThrow();
     expect(classifier(arr)).toBeDefined();
   });
@@ -58,7 +58,7 @@ describe('classifier spec', () => {
         regNo: '19',
       },
     ];
-
+    
     expect(classifier(arr)).toHaveProperty('noOfGroups', 1);
     expect(classifier(arr)).toHaveProperty('group1.members');
   });
